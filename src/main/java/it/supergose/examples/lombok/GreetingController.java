@@ -13,9 +13,9 @@ public class GreetingController {
 
     @RequestMapping("/greeting")
     public Greeting greeting(@RequestParam(value="name", defaultValue="World") String name) {
-        return new Greeting.Builder()
-                .setId(counter.incrementAndGet())
-                .setContent(String.format(template, name))
+        return Greeting.builder()
+                .id(counter.incrementAndGet())
+                .content(String.format(template, name))
                 .build();
     }
 }
