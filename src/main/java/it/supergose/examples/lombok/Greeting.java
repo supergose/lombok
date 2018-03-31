@@ -2,8 +2,6 @@ package it.supergose.examples.lombok;
 
 import lombok.*;
 
-import java.util.Objects;
-
 @EqualsAndHashCode
 @ToString
 @AllArgsConstructor
@@ -14,5 +12,4 @@ public class Greeting {
     private final long id;
     @NonNull
     private final String content;
-
 }
